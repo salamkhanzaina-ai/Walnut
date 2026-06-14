@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walnut</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar" aria-label="Walnut navigation">
+        <div class="brand-lockup">
+          <div class="brand-mark">W</div>
+          <div>
+            <p class="eyebrow">Learning Realm</p>
+            <h1>Walnut</h1>
+          </div>
+        </div>
+
+        <nav class="realm-nav">
+          <button class="nav-item active" data-realm="home">
+            <span class="nav-icon">H</span>
+            <span>Home</span>
+          </button>
+          <button class="nav-item" data-realm="logic">
+            <span class="nav-icon">L</span>
+            <span>Logic</span>
+          </button>
+          <button class="nav-item" data-realm="language">
+            <span class="nav-icon">G</span>
+            <span>Language</span>
+          </button>
+          <button class="nav-item" data-realm="heart">
+            <span class="nav-icon">S</span>
+            <span>Heart</span>
+          </button>
+        </nav>
+
+        <section class="profile-card" aria-label="Learner profile">
+          <div class="avatar-ring">
+            <div class="avatar">
+              <span class="avatar-crown"></span>
+              <span class="avatar-face"></span>
+            </div>
+          </div>
+          <div>
+            <p class="eyebrow">Explorer Age 7</p>
+            <h2>Mira</h2>
+            <p>Level 12 Sage Seedling</p>
+          </div>
+          <div class="growth-bar">
+            <span style="width: 68%"></span>
+          </div>
+        </section>
+      </aside>
+
+      <section class="main-stage">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Today's Adventure</p>
+            <h2 id="stage-title">Choose a Realm</h2>
+          </div>
+          <div class="top-actions">
+            <button class="icon-button" aria-label="Open rewards">*</button>
+            <button class="icon-button" aria-label="Open settings">+</button>
+          </div>
+        </header>
+
+        <section class="hero-world" id="home-panel">
+          <div class="world-sky">
+            <div class="sun-disc"></div>
+            <div class="cloud cloud-one"></div>
+            <div class="cloud cloud-two"></div>
+          </div>
+
+          <svg class="world-illustration" viewBox="0 0 900 680" aria-hidden="true" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="softGrass" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#c9dda8" />
+                <stop offset="1" stop-color="#a9c88a" />
+              </linearGradient>
+              <linearGradient id="waterfall" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#eefcff" />
+                <stop offset="0.45" stop-color="#84d6f1" />
+                <stop offset="1" stop-color="#3a99c7" />
+              </linearGradient>
+            </defs>
+            <path class="distant-hill" d="M0 280 C120 190 180 245 260 182 C360 104 430 248 535 150 C632 60 730 198 900 118 L900 680 L0 680 Z" />
+            <path class="mid-hill" d="M0 358 C92 286 180 316 260 252 C358 174 480 286 570 224 C692 138 792 268 900 210 L900 680 L0 680 Z" />
+            <path class="grass-island main" d="M48 420 C170 338 272 388 380 335 C494 278 590 360 690 318 C790 276 852 330 900 386 L900 680 L0 680 L0 472 C16 454 28 437 48 420 Z" />
+            <path class="grass-island left" d="M22 546 C90 493 170 520 238 472 C305 424 358 468 422 446 C390 512 310 562 184 582 C104 594 54 580 22 546 Z" />
+            <path class="grass-island right" d="M588 530 C642 470 718 482 780 438 C836 398 874 444 898 478 L898 604 C770 626 660 596 588 530 Z" />
+            <path class="road-river" d="M395 680 C420 585 502 548 474 478 C448 410 366 394 402 334 C438 274 560 254 592 176" />
+            <path class="road-river highlight" d="M426 680 C452 596 528 555 504 488 C482 428 414 408 444 354 C474 300 584 274 614 188" />
+            <path class="waterfall-fall" d="M593 176 C610 238 624 292 606 346 C586 408 614 476 654 534 L726 534 C676 472 660 414 680 342 C698 278 674 220 642 166 Z" />
+            <path class="waterfall-shine" d="M626 204 C638 260 642 302 626 354 C612 402 628 444 660 506" />
+            <path class="floating-island island-one" d="M104 214 C150 180 210 194 238 226 C208 252 150 264 104 238 Z" />
+            <path class="floating-island island-two" d="M655 130 C710 94 790 110 824 148 C778 180 702 188 655 158 Z" />
+            <g class="cartoon-ruins">
+              <path d="M146 380 L210 380 L198 314 L158 314 Z" />
+              <path d="M132 314 L224 314 L178 274 Z" />
+              <rect x="158" y="325" width="12" height="52" rx="3" />
+              <rect x="186" y="325" width="12" height="52" rx="3" />
+              <circle cx="178" cy="350" r="9" />
+            </g>
+            <g class="cartoon-tomb">
+              <path d="M710 390 C710 344 748 306 794 306 C842 306 878 344 878 390 L878 438 L710 438 Z" />
+              <path d="M748 438 L748 388 C748 360 770 338 794 338 C820 338 840 360 840 388 L840 438 Z" />
+              <path d="M724 392 L864 392" />
+              <path d="M738 362 L850 362" />
+            </g>
+            <g class="cartoon-cloud-city">
+              <path d="M634 206 C656 168 718 168 742 204 C780 192 816 218 816 252 C816 288 770 302 728 286 C694 314 632 302 620 268 C590 262 586 222 634 206 Z" />
+              <rect x="682" y="188" width="22" height="70" rx="8" />
+              <rect x="716" y="172" width="24" height="86" rx="8" />
+              <path d="M676 188 L694 164 L712 188 Z" />
+              <path d="M710 172 L728 144 L748 172 Z" />
+            </g>
+            <g class="tiny-details">
+              <circle cx="300" cy="438" r="8" />
+              <circle cx="322" cy="454" r="5" />
+              <circle cx="552" cy="408" r="7" />
+              <path d="M256 392 l16 -24 l16 24 Z" />
+              <path d="M512 302 l14 -22 l14 22 Z" />
+              <path d="M805 504 l16 -24 l16 24 Z" />
+            </g>
+          </svg>
+
+          <div class="realm-gate gate-logic" data-realm="logic">
+            <div class="gate-art logic-art">
+              <span class="column left"></span>
+              <span class="column right"></span>
+              <span class="roof"></span>
+              <span class="gem"></span>
+            </div>
+            <div>
+              <h3>Logic Ruins</h3>
+              <p>Patterns, strategy, classification</p>
+            </div>
+          </div>
+
+          <div class="realm-gate gate-language" data-realm="language">
+            <div class="gate-art language-art">
+              <span class="tablet"></span>
+              <span class="glyph one">ka</span>
+              <span class="glyph two">lu</span>
+              <span class="glyph three">mar</span>
+            </div>
+            <div>
+              <h3>Glyph Tomb</h3>
+              <p>Sounds, symbols, secret meaning</p>
+            </div>
+          </div>
+
+          <div class="realm-gate gate-heart" data-realm="heart">
+            <div class="gate-art heart-art">
+              <span class="weather-cloud"></span>
+              <span class="rain"></span>
+              <span class="spark"></span>
+            </div>
+            <div>
+              <h3>Skyheart</h3>
+              <p>Feelings, art, calm choices</p>
+            </div>
+          </div>
+
+          <div class="path logic-path"></div>
+          <div class="path language-path"></div>
+          <div class="path heart-path"></div>
+
+          <div class="home-avatar" aria-label="Player avatar">
+            <div class="avatar large">
+              <span class="avatar-crown"></span>
+              <span class="avatar-face"></span>
+            </div>
+            <div class="nameplate">Mira</div>
+          </div>
+
+          <section class="mission-panel">
+            <p class="eyebrow">Next Quest</p>
+            <h3>Decode the Moon Door</h3>
+            <p>Use one pattern clue from Logic and one sound clue from Language to unlock a new spell.</p>
+            <button class="primary-button" data-realm="language">Start Quest</button>
+          </section>
+        </section>
+
+        <section class="realm-detail hidden" id="realm-panel" aria-live="polite">
+          <div class="realm-visual" id="realm-visual">
+            <div class="realm-scene" id="realm-scene" aria-hidden="true"></div>
+            <div class="map-road">
+              <span class="node done"></span>
+              <span class="node active"></span>
+              <span class="node"></span>
+              <span class="node boss"></span>
+            </div>
+          </div>
+
+          <div class="realm-copy">
+            <p class="eyebrow" id="realm-kicker">Realm</p>
+            <h2 id="realm-title">Logic Ruins</h2>
+            <p id="realm-description"></p>
+
+            <div class="lesson-strip" id="lesson-strip"></div>
+
+            <div class="challenge-area">
+              <div class="challenge-card">
+                <p class="eyebrow">Practice Battle</p>
+                <h3 id="challenge-title"></h3>
+                <p id="challenge-text"></p>
+                <div class="choice-grid" id="choice-grid"></div>
+              </div>
+
+              <div class="side-quest-card">
+                <p class="eyebrow">Side Quest</p>
+                <h3 id="side-title"></h3>
+                <p id="side-text"></p>
+                <div class="reward-row">
+                  <span>Reward</span>
+                  <strong id="side-reward"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <aside class="right-rail">
+        <section class="fairy-card">
+          <div class="fairy-orbit">
+            <div class="fairy">*</div>
+          </div>
+          <div>
+            <p class="eyebrow">Curiosity Fairy</p>
+            <h2>Nia</h2>
+            <p id="fairy-line">Ask me why thunder sounds angry, how secret languages work, or what makes a good riddle.</p>
+          </div>
+          <div class="ask-box">
+            <input id="curiosity-input" type="text" placeholder="Ask anything..." />
+            <button id="ask-button" aria-label="Ask Nia">Go</button>
+          </div>
+        </section>
+
+        <section class="progress-card">
+          <div class="section-heading">
+            <p class="eyebrow">Foundations</p>
+            <h2>Growth</h2>
+          </div>
+          <div class="skill-meter">
+            <div><span>Logic</span><strong>72%</strong></div>
+            <progress value="72" max="100"></progress>
+          </div>
+          <div class="skill-meter">
+            <div><span>Language</span><strong>58%</strong></div>
+            <progress value="58" max="100"></progress>
+          </div>
+          <div class="skill-meter">
+            <div><span>Heart</span><strong>64%</strong></div>
+            <progress value="64" max="100"></progress>
+          </div>
+        </section>
+
+        <section class="artifact-card">
+          <p class="eyebrow">Artifacts</p>
+          <div class="artifact-grid">
+            <span title="Pattern Lens">01</span>
+            <span title="Sun Scroll">02</span>
+            <span title="Calm Umbrella">03</span>
+            <span title="Echo Shell">04</span>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
